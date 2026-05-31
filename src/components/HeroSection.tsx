@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Youtube, Instagram } from "lucide-react";
+import { ArrowDown, Github, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ThreeScene from "./ThreeScene";
 
@@ -10,20 +10,20 @@ export default function HeroSection() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/naufal-angkasah",
+      href: "https://github.com/raziqcoding",
       label: "GitHub",
     },
     {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/naufal-angkasah/",
-      label: "LinkedIn",
+      icon: Instagram,
+      href: "https://www.instagram.com/only_r4ziq?igsh=MXNhamIwYnVuc3Jy",
+      label: "Instagram",
     },
-    { icon: Youtube, href: "https://youtube.com/", label: "YouTube" },
-    { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
   ];
+
   return (
     <section
       id="home"
@@ -41,8 +41,8 @@ export default function HeroSection() {
             className="flex-shrink-0"
           >
             <img
-              src="/foto akun1.jpg" // ganti dengan foto kamu
-              alt="Naufal"
+              src="/foto akun1.jpg"
+              alt="Raziq"
               className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-primary shadow-glow"
             />
           </motion.div>
@@ -55,7 +55,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
             >
-              <span className="text-gradient">Naufal Portfolio</span>
+              <span className="text-gradient">Raziq Portfolio</span>
             </motion.h1>
 
             <motion.p
@@ -64,8 +64,15 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground mb-8"
             >
-              Saya membangun aplikasi web yang indah dan fungsional, serta
-              membagikan pengetahuan melalui konten yang inspiratif.
+              Halo, saya <strong>Raziq</strong>, seorang siswa kelas 10 yang
+              memiliki semangat tinggi untuk terus belajar dan mencoba hal-hal
+              baru. Saya menyukai olahraga, petualangan, serta berbagai
+              aktivitas yang menantang kemampuan fisik dan mental. Selain itu,
+              saya juga tertarik pada dunia teknologi dan pengembangan web,
+              sehingga saya senang mengeksplorasi ide kreatif dan mengubahnya
+              menjadi proyek yang bermanfaat. Bagi saya, setiap pengalaman
+              adalah kesempatan untuk berkembang, memperluas wawasan, dan
+              menjadi versi terbaik dari diri sendiri.
             </motion.p>
 
             <motion.div
@@ -79,7 +86,8 @@ export default function HeroSection() {
                 className="rounded-full px-8 shadow-glow"
                 onClick={() => {
                   const element = document.querySelector("#projects");
-                  if (element) element.scrollIntoView({ behavior: "smooth" });
+                  if (element)
+                    element.scrollIntoView({ behavior: "smooth" });
                 }}
               >
                 Lihat Projects
@@ -91,7 +99,8 @@ export default function HeroSection() {
                 className="rounded-full px-8"
                 onClick={() => {
                   const element = document.querySelector("#contact");
-                  if (element) element.scrollIntoView({ behavior: "smooth" });
+                  if (element)
+                    element.scrollIntoView({ behavior: "smooth" });
                 }}
               >
                 Hubungi Saya

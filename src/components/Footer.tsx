@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/naufal-angkasah/tes-modul-aja.git', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/naufal-angkasah/', label: 'LinkedIn' },
-    // { icon: Youtube, href: '#', label: 'YouTube' },
-    // { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/raziqcoding-studio', label: 'GitHub' },
+    //{ icon: Linkedin, href: 'https://www.linkedin.com/in/naufal-angkasah/', label: 'LinkedIn' },
+    //{ icon: Youtube, href: '#', label: 'YouTube' },
+    { icon: Instagram, href: 'https://www.instagram.com/only_r4ziq?igsh=MXNhamIwYnVuc3Jy', label: 'Instagram' },
   ];
 
   return (
@@ -21,9 +21,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex items-center gap-2 text-muted-foreground"
           >
-            <span>© {currentYear} Made</span>
-            {/* <Heart className="h-4 w-4 text-destructive fill-destructive" /> */}
-            <span>by Naufal.A</span>
+          <span>© {currentYear} Made by Raziq</span>
           </motion.div>
 
           <motion.div
